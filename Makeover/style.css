@@ -1,0 +1,60 @@
+*{
+    box-sizing:border-box ;
+    margin: 0;
+    padding: 0;
+}
+
+body{                             /*centre mai allignment hua*/
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation:bgcolor infinite 20s;
+    
+}
+
+.emoji{
+    font-size: 15rem;
+    cursor:pointer;
+    user-select: none;
+}
+
+.closed{
+    display: none;
+}
+
+.open{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+@keyframes bgcolor{               /* for changing background color*/
+    0%
+    {
+        background: salmon;
+    }
+    20%
+    {
+        background: skyblue;
+    }
+    40%
+    {
+        background: teal;
+    }
+    60%
+    {
+        background: yellowgreen;
+    }
+    80%
+    {
+        background: rosybrown;
+    }
+    100%
+    {
+        background: sandybrown;
+    }
+}
